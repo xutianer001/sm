@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>扫码</title>
+    <style>
+        .flex {
+            display: flex;
+        }
+
+        .center {
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="center">
+        <h2>输入你的电话号码</h2>
+
+        <form action="">
+            <label for="phone">电话号码:</label><br>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{11}" required><br>
+            <br>
+            <input type="submit" value="提交">
+        </form>
+
+        <p>点击“提交”后，电话号码将被验证。</p>
+    </div>
+
+    <div class="center">
+        <h1>扫码付款</h1>
+        <h2>请使用微信或支付宝扫描二维码</h2>
+        <div><img src="zhifu.png" height="400px" width="400px"></img></div>
+        <!--<div id="qrcode">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
+    <script>
+        $(function(){
+            $('#qrcode').qrcode({
+                render: "canvas",
+                width: 200,
+                height: 200,
+                text: ""
+            });
+        });
+    </script>
+    </div>-->
+</body>
+
+</html>
